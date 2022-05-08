@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="393.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="supermarketproject1.SecondWindowController">
+    <stylesheets>
+        <URL value="@secondwindow.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="53.0" layoutY="14.0" prefHeight="46.0" prefWidth="294.0" text="              Products" textFill="#e51111" textOverrun="WORD_ELLIPSIS" AnchorPane.bottomAnchor="369.6" AnchorPane.leftAnchor="53.0" AnchorPane.rightAnchor="91.60000000000002" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="addToCart" layoutX="32.0" layoutY="361.0" mnemonicParsing="false" onAction="#ProductTFHandler" prefHeight="35.0" prefWidth="87.0" text="add to cart" />
+      <Button fx:id="checkout" layoutX="253.0" layoutY="361.0" mnemonicParsing="false" onAction="#CheckoutBTHandler" prefHeight="35.0" prefWidth="95.0" text="checkout" />
+      <ListView fx:id="viewProducts" layoutX="96.0" layoutY="80.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
